@@ -14,6 +14,8 @@ You can train the model by executing the following command:
 ```bash
 python train.py
 ```
+It takes about 10s on CPU to achieve ~98% test accuracy on MNIST dataset.
+
 You can also choose the activation function and optimizer to use. We have implemented ReLU and sigmoid activation functions. Momentum and SGD are available as an optimizer. For example,
 
 ```bash
