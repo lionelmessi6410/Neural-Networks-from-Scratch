@@ -1,5 +1,5 @@
 # Neural Networks from Scratch
-In this tutorial, you will learn the fundamentals of how you can build neural networks without the help of the deep learning frameworks, and instead by using NumPy. For full code, please refer to [`NN-from-Scratch.ipynb`](https://github.com/lionelmessi6410/Neural-Networks-from-Scratch/NN-from-Scratch.ipynb). Meanwhile [`NN-from-Scratch.html`](https://github.com/lionelmessi6410/Neural-Networks-from-Scratch/NN-from-Scratch.html) provides a more comfortable reading.
+In this tutorial, you will learn the fundamentals of how you can build neural networks without the help of the deep learning frameworks, and instead by using NumPy. For full code, please refer to [`NN-from-Scratch.ipynb`](https://github.com/lionelmessi6410/Neural-Networks-from-Scratch/blob/main/NN-from-Scratch.ipynb).
 
 <p align="center">
 	<img src="./figs/deep_nn-1.png" width="800"/>
