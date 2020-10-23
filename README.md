@@ -1,5 +1,5 @@
 # Neural Networks from Scratch
-In this tutorial, you will learn the fundamentals of how you can build neural networks without the help of the deep learning frameworks, and instead by using NumPy. For full code, please refer to [`NN-from-Scratch.ipynb`](https://github.com/lionelmessi6410/Neural-Networks-from-Scratch/blob/main/NN-from-Scratch.ipynb).
+In this tutorial, you will learn the fundamentals of how you can build neural networks without the help of the deep learning frameworks, and instead by using NumPy.
 
 <p align="center">
 	<img src="./figs/deep_nn-1.png" width="800"/>
@@ -9,6 +9,25 @@ In this tutorial, you will learn the fundamentals of how you can build neural ne
 
 Creating complex neural networks with different architectures in Python should be a standard practice for any Machine Learning Engineer and Data Scientist. But a genuine understanding of how a neural network works is equally as valuable. This is what we aim to expand on in this article, the very fundamentals on how we can build neural networks, without the help of the frameworks that make it easy for us.
 
+## Usage
+You can train the model by executing the following command:
+```bash
+python train.py
+```
+You can also choose the activation function and optimizer to use. We have implemented ReLU and sigmoid activation functions. Momentum and SGD are available as an optimizer. For example,
+
+```bash
+python train.py --activation sigmoid --optimizer momentum --l_rate 4
+```
+- `--activation`: `relu` or `sigmoid`
+- `--optimizer`: `sgd` or `momentum`
+- `--batch_size`: batch sized used for training
+- `--l_rate`: learning rate
+- `--beta`: beta in momentum optimizer
+
+For Jupyter notebook, please refer to [`NN-from-Scratch.ipynb`](https://github.com/lionelmessi6410/Neural-Networks-from-Scratch/blob/main/NN-from-Scratch.ipynb).
+
+# Tutorial
 ## Model architecture
 We are building a basic deep neural network with **3 layers** in total: **1 input layer**, **1 hidden layers** and **1 output layer**. All layers will be fully connected. We implement ReLU and sigmoid activation functions. SGD and Momentum optimizer are available.
 
