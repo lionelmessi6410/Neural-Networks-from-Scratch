@@ -66,9 +66,9 @@ class DeepNeuralNetwork():
         
         params = {
             "W1": np.random.randn(hidden_layer, input_layer) * np.sqrt(1./input_layer),
-            "b1": np.zeros((hidden_layer, 1)) * np.sqrt(1./input_layer),
+            "b1": np.zeros((hidden_layer, 1)),
             "W2": np.random.randn(output_layer, hidden_layer) * np.sqrt(1./hidden_layer),
-            "b2": np.zeros((output_layer, 1)) * np.sqrt(1./hidden_layer)
+            "b2": np.zeros((output_layer, 1))
         }
         return params
     
@@ -174,7 +174,7 @@ class DeepNeuralNetwork():
             for j in range(num_batches):
                 # Batch
                 begin = j * self.batch_size
-                end = min(begin + self.batch_size, x_train.shape[0]-1)
+                end = min(begin + self.batch_size, x_train.shape[0])
                 x = x_train_shuffled[begin:end]
                 y = y_train_shuffled[begin:end]
                 
