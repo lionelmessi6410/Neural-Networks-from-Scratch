@@ -66,9 +66,9 @@ class DeepNeuralNetwork():
         
         params = {
             "W1": np.random.randn(hidden_layer, input_layer) * np.sqrt(1./input_layer),
-            "b1": np.zeros((hidden_layer, 1)) * np.sqrt(1./input_layer),
+            "b1": np.zeros((hidden_layer, 1)),
             "W2": np.random.randn(output_layer, hidden_layer) * np.sqrt(1./hidden_layer),
-            "b2": np.zeros((output_layer, 1)) * np.sqrt(1./hidden_layer)
+            "b2": np.zeros((output_layer, 1))
         }
         return params
     
