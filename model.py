@@ -190,8 +190,10 @@ class DeepNeuralNetwork():
             output = self.feed_forward(x_train)
             train_acc = self.accuracy(y_train, output)
             train_loss = self.cross_entropy_loss(y_train, output)
+            
             # Test data
             output = self.feed_forward(x_test)
             test_acc = self.accuracy(y_test, output)
             test_loss = self.cross_entropy_loss(y_test, output)
+            
             print(template.format(i+1, time.time()-start_time, train_acc, train_loss, test_acc, test_loss))
